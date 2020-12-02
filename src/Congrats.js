@@ -13,7 +13,7 @@ const Congrat =(props)=>{
         <>
         {
             props.success?
-            <div data-test="component-congrats">
+            <div data-test="component-congrats" className="alert alert-success">
                 <span data-test="congrats-message"> Congratulations! You guessed the word!</span>
             </div>
             :
