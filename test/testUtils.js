@@ -9,7 +9,7 @@ import checkPropTypes from "check-prop-types"
 
 export const findByAttrib = (wrapper,val) => wrapper.find(`[data-test="${val}"]`)
 
-export const checkProp = (component,conformingProps)=>{
+export const checkProps = (component,conformingProps)=>{
     const propError = checkPropTypes(
         component.propTypes,
         conformingProps,

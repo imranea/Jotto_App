@@ -1,10 +1,6 @@
 import App from './App';
-import Enzyme,{shallow} from "enzyme"
-import EnzymeAdapter from "enzyme-adapter-react-16"
+import {shallow} from "enzyme"
 import {findByAttrib} from "../test/testUtils"
-
-
-Enzyme.configure({adapter:new EnzymeAdapter()})
 
 /**
  * Factory function to create a ShallowWrapper for the Congrats component

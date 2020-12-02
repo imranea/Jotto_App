@@ -1,8 +1,7 @@
 import Congrat from "./Congrats"
 import {shallow} from "enzyme"
-import EnzymeAdapter from "enzyme-adapter-react-16"
 
-import {findByAttrib,checkProp} from "../test/testUtils"
+import {findByAttrib,checkProps} from "../test/testUtils"
 
 
 const defaultProps= {success:false}
@@ -38,6 +37,5 @@ test("renders non-empty congrats message when 'success' prop is true",()=>{
 })
 
 test("does not throw warning with expected props",()=>{
-    const expectedProps = {success:false}
-    checkProp(Congrat,expectedProps)
+    checkProps(Congrat,defaultProps)
 });
