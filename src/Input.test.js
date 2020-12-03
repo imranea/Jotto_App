@@ -34,16 +34,24 @@ describe('render',()=>{
     })
 
     describe('word has been guessed',()=>{
+        let wrapper
+        beforeEach(()=>{
+            const initialState={success:true}
+            wrapper = setup(initialState)
+        })
         test('render component without error',()=>{
-
+            const component = findByAttrib(wrapper,"component-input")
+            expect(component.length).toBe(1)
         })
 
         test('render input box',()=>{
-
+            const inputBox = findByAttrib(wrapper,"input-box")
+            expect(inputBox.length).toBe(0)
         })
 
         test('does not render input box',()=>{
-
+            const submitButton = findByAttrib(wrapper,"submit-button")
+            expect(submitButton.length).toBe(0)
         })
     })
 });
