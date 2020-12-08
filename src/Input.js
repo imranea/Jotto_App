@@ -3,7 +3,6 @@ import {connect} from "react-redux"
 
 class Input extends Component{
     render(){
-        console.log(this.props.success)
         const contents =this.props.success?
         null:
         (
