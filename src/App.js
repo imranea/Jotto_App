@@ -10,7 +10,7 @@ class App extends Component {
     return (
       <div className="container" data-test="component-app">
         <h1>Jotto</h1>
-        <Congrats success={false}/>
+        <Congrats success={true}/>
         <GuessedWords guessedWords={[
           {guessedWord:'train',letterMatchCount:3},
           {guessedWord:'agile',letterMatchCount:1},

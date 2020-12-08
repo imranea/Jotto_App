@@ -14,7 +14,7 @@ const defaultProps={
  */
 
 const setup = (props={}) =>{
-    const setupProps = {...defaultProps,...props}
+    const setupProps = {...props}
     return shallow(<GuessedWords {...setupProps}/>)
 }
 
